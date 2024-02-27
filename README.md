@@ -1,3 +1,5 @@
+                                   Tic-Tac-Toe Game
+
 Enter size of the Board: 3
 Enter Player 1 Name: Obama
 Enter Player 2 Name:Osama
@@ -11,7 +13,7 @@ Enter Player 2 Name:Osama
                            |    |   
                            |    |   
                            |    |   
-Player:Obama select box number to enter: 1
+Player: Obama select the box number to enter: 1
 ------------------------------------------------------------
                         Board position:                     
                         1   | 2   | 3  
@@ -22,9 +24,9 @@ Player:Obama select box number to enter: 1
                         O  |    |   
                            |    |   
                            |    |   
-Player:Osama select box number to enter: 1
+Player:Osama select the box number to enter: 1
 ========================================================
-Incorrect place, please give correct place
+Incorrect place, please give the correct place
 ========================================================
 ------------------------------------------------------------
                         Board position:                     
@@ -36,7 +38,7 @@ Incorrect place, please give correct place
                         O  |    |   
                            |    |   
                            |    |   
-Player:Osama select box number to enter: 2
+Player: Osama select the box number to enter: 2
 ------------------------------------------------------------
                         Board position:                     
                         1   | 2   | 3  
@@ -47,7 +49,7 @@ Player:Osama select box number to enter: 2
                         O  | X  |   
                            |    |   
                            |    |   
-Player:Obama select box number to enter: 3
+Player: Obama select the box number to enter: 3
 ------------------------------------------------------------
                         Board position:                     
                         1   | 2   | 3  
@@ -58,7 +60,7 @@ Player:Obama select box number to enter: 3
                         O  | X  | O 
                            |    |   
                            |    |   
-Player:Osama select box number to enter: 4
+Player: Osama select the box number to enter: 4
 ------------------------------------------------------------
                         Board position:                     
                         1   | 2   | 3  
@@ -92,12 +94,12 @@ Player:Osama select box number to enter: 6
                         X  | O  | X 
                            |    |   
 Player:Obama select box number to enter: 7
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
                         Game Board:                     
                         O  | X  | O 
                         X  | O  | X 
                         O  |    |   
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 ========================================================
 Obama is the Winner, yayyyyyyy!!!!!!!!!
 =========================================================

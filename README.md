@@ -103,7 +103,7 @@ Player:Obama select box number to enter: 7
                         X  | O  | X 
                         O  |    |   
 
-=====================================
+=====================
 Obama is the Winner, yayyyyyyy!!!!!!!!!
 =====================================
 

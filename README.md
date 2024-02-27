@@ -1,8 +1,11 @@
                                    Tic-Tac-Toe Game
 
 Enter size of the Board: 3
+
 Enter Player 1 Name: Obama
+
 Enter Player 2 Name:Osama
+
 ------------------------------------------------------------
                         Board position:                     
                         1   | 2   | 3  

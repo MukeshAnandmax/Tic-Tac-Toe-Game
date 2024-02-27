@@ -56,7 +56,10 @@ public class Board {
                     System.out.print("    ");
 
                 }
-                System.out.print(" | ");
+                if(j+1<size){
+                    System.out.print(" | ");
+                }
+
             }
             System.out.println();
 

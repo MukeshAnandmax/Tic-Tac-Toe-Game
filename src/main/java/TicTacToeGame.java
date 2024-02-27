@@ -11,14 +11,14 @@ public class TicTacToeGame {
     Board board;
     HashMap<Integer, Pair> boxNumber = new HashMap<>();
 
-    public TicTacToeGame() {
-        initialiseGame();
+    public TicTacToeGame(int size) {
+        initialiseGame(size);
     }
 
-    public void initialiseGame(){
-        board= new Board(3);
+    public void initialiseGame(int size){
+        board= new Board(size);
         deque = new ArrayDeque<>();
-        mapBoxtoPair();
+        mapBoxtoPair(size);
 
         Player p1 = new Player("Player1",new PieceO());
         deque.addLast(p1);
@@ -49,6 +49,12 @@ public class TicTacToeGame {
             Scanner inputScanner = new Scanner(System.in);
             int i = inputScanner.nextInt();
 
+            if(i> board.getSize()* board.getSize()){
+                System.out.println("incorrect place please give correct place");
+                deque.addFirst(playerTurn);
+                continue;
+            }
+
             int inputRow = (int)boxNumber.get(i).getKey();
             int inputColumn = (int)boxNumber.get(i).getValue();
 
@@ -67,10 +73,14 @@ public class TicTacToeGame {
                 countofPlayer2turn++;
             }
 
-            if(countofPlayer1turn>=3|| countofPlayer2turn>=3){
+            if(countofPlayer1turn>= board.getSize()|| countofPlayer2turn>= board.getSize()){
 
                 boolean winner = isWinner( inputRow,inputColumn,playerTurn.getPlayingPiece().pieceType);
                 if(winner){
+                    System.out.println("############################################################################");
+                    board.printBoard();
+                    System.out.println("############################################################################");
+
                     return playerTurn.getName();
 
                 }
@@ -123,15 +133,16 @@ public class TicTacToeGame {
     }
 
 
-    public  void mapBoxtoPair(){
-        boxNumber.put(1, new Pair(0,0));
-        boxNumber.put(2, new Pair(0,1));
-        boxNumber.put(3, new Pair(0,2));
-        boxNumber.put(4, new Pair(1,0));
-        boxNumber.put(5, new Pair(1,1));
-        boxNumber.put(6, new Pair(1,2));
-        boxNumber.put(7, new Pair(2,0));
-        boxNumber.put(8, new Pair(2,1));
-        boxNumber.put(9, new Pair(2,2));
+    public  void mapBoxtoPair(int size){
+
+        int x=1;
+        for(int i=0;i<size;i++){
+            for(int j=0;j<size;j++){
+
+                boxNumber.put(x, new Pair(i,j));
+                x++;
+            }
+        }
+
     }
 }

@@ -1,4 +1,4 @@
-package Modal;
+package Model;
 
 public class Piece {
 

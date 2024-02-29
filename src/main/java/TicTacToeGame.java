@@ -1,4 +1,4 @@
-import Modal.*;
+import Model.*;
 import javafx.util.Pair;
 
 import java.util.ArrayDeque;
